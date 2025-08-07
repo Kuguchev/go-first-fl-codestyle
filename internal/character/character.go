@@ -7,7 +7,7 @@ import (
 )
 
 type Character interface {
-	Id() uint64
+	utils.Identifiable
 	Name() string
 	Description() string
 	PersonalDescription() string

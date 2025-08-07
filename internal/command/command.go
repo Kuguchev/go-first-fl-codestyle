@@ -1,9 +1,12 @@
 package command
 
-import "github.com/Kuguchev/go-first-fl-codestyle/internal/character"
+import (
+	"github.com/Kuguchev/go-first-fl-codestyle/internal/character"
+	"github.com/Kuguchev/go-first-fl-codestyle/internal/utils"
+)
 
 type Command interface {
-	Id() uint64
+	utils.Identifiable
 	Execute(character.Character) string
 	Description() string
 }
